@@ -10,7 +10,7 @@ The primary goal of this file is to demonstrate a simple unittest implementation
 import unittest
 import math
 
-from Triangle import classifyTriangle
+from triangle import classify_triangle as classifyTriangle
 
 
 # This code implements the unit test functionality

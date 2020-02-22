@@ -11,21 +11,18 @@ The primary goal of this file is to demonstrate a simple python program to class
 import math
 
 
-def classifyTriangle(a, b, c):
+def classify_triangle(a, b, c):
     """
-    Your correct code goes here...  Fix the faulty logic below until the code passes all of 
-    you test cases. 
-    
     This function returns a string with the type of triangle from three integer values
     corresponding to the lengths of the three sides of the Triangle.
-    
+
     return:
         If all three sides are equal, return 'Equilateral'
         If exactly one pair of sides are equal, return 'Isoceles'
         If no pair of  sides are equal, return 'Scalene'
         If not a valid triangle, then return 'NotATriangle'
         If the sum of any two sides equals the squate of the third side, then return 'Right'
-      
+
       BEWARE: there may be a bug or two in this code
     """
     ret = ""
@@ -51,9 +48,8 @@ def classifyTriangle(a, b, c):
         ret += 'Right '
     if a == b and b == a and c == a:
         ret += 'Equilateral'
-    elif (a != b) and (b != c) and (a != b):
+    elif (a != b) and (b != c) and (a != c):
         ret += 'Scalene'
     else:
         ret += 'Isosceles'
     return ret
-
